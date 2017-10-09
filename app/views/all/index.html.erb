@@ -1,0 +1,14 @@
+<h1>Here are all the cats, todos, and users: </h1>
+<% @cats.each do |cat| %>
+  <%= "Name: " + cat.name %>
+  <br/>
+<% end %>
+<% @users.each do |user| %>
+  <%= "Username: " + user.username %>
+  <br/>
+<% end %>
+<% @todos.each do |todo| %>
+  <%= "Task: " + todo.tasks %>
+  <br/>
+<% end %>
+<%= link_to("Add new task", new_task_path) %>
